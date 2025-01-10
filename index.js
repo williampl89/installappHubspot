@@ -220,7 +220,7 @@ app.get('/', async (req, res) => {
 app.post('/webhook', (req, res) => {
   let body = req.body;
 
-  console.log(`Received webhook`);
+  console.log('Received webhook:', body);
   res.status(200).send(`Received webhook`);
 });
 
