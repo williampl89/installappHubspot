@@ -215,6 +215,15 @@ app.get('/', async (req, res) => {
   res.end();
 });
 
+
+
+app.post('/webhook', (req, res) => {
+  let body = req.body;
+
+  console.log(`Received webhook`);
+  res.status(200).send(`Received webhook`);
+});
+
 // Ruta para validar el Webhook (Meta requiere esta validación)
 app.get('/webhook', (req, res) => {
   const mode = req.query['hub.mode'];
@@ -228,6 +237,7 @@ app.get('/webhook', (req, res) => {
       res.sendStatus(403);
   } 
 });
+
 
 
 app.get('/error', (req, res) => {
