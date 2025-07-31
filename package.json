@@ -1,6 +1,7 @@
 {
-  "name": "oauth_tutorial",
+  "name": "instagram-hubspot",
   "version": "1.0.0",
+  "description": "Integration between Instagram and HubSpot",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
